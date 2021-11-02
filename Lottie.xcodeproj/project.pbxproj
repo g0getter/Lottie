@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD43EED65CD4AD50EA82BF6B /* Pods_Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BFFC2DCB7BD0CFCA27A8B1 /* Pods_Lottie.framework */; };
 		BB36784627316DE20077910A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36784527316DE20077910A /* AppDelegate.swift */; };
 		BB36784827316DE20077910A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36784727316DE20077910A /* SceneDelegate.swift */; };
 		BB36784A27316DE20077910A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36784927316DE20077910A /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A8BFFC2DCB7BD0CFCA27A8B1 /* Pods_Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB36784227316DE20077910A /* Lottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB36784527316DE20077910A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB36784727316DE20077910A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		BB36785127316DE40077910A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB36785427316DE40077910A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB36785627316DE40077910A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D713FB2A5315FEE760F90E2E /* Pods-Lottie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottie.debug.xcconfig"; path = "Target Support Files/Pods-Lottie/Pods-Lottie.debug.xcconfig"; sourceTree = "<group>"; };
+		E6E52B85C9311A883358DFD7 /* Pods-Lottie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottie.release.xcconfig"; path = "Target Support Files/Pods-Lottie/Pods-Lottie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD43EED65CD4AD50EA82BF6B /* Pods_Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E7537D66C353A2CD7F2C16A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8BFFC2DCB7BD0CFCA27A8B1 /* Pods_Lottie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80ED9FFE2B4037A80A5CD5D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D713FB2A5315FEE760F90E2E /* Pods-Lottie.debug.xcconfig */,
+				E6E52B85C9311A883358DFD7 /* Pods-Lottie.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BB36783927316DE20077910A = {
 			isa = PBXGroup;
 			children = (
 				BB36784427316DE20077910A /* Lottie */,
 				BB36784327316DE20077910A /* Products */,
+				80ED9FFE2B4037A80A5CD5D1 /* Pods */,
+				5E7537D66C353A2CD7F2C16A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB36785927316DE40077910A /* Build configuration list for PBXNativeTarget "Lottie" */;
 			buildPhases = (
+				D5C5901F746770412D57A021 /* [CP] Check Pods Manifest.lock */,
 				BB36783E27316DE20077910A /* Sources */,
 				BB36783F27316DE20077910A /* Frameworks */,
 				BB36784027316DE20077910A /* Resources */,
@@ -134,6 +160,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D5C5901F746770412D57A021 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lottie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB36783E27316DE20077910A /* Sources */ = {
@@ -287,6 +338,7 @@
 		};
 		BB36785A27316DE40077910A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D713FB2A5315FEE760F90E2E /* Pods-Lottie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +358,7 @@
 		};
 		BB36785B27316DE40077910A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6E52B85C9311A883358DFD7 /* Pods-Lottie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
