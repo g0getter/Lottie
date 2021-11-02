@@ -6,5 +6,5 @@ target 'Lottie' do
   use_frameworks!
 
   # Pods for Lottie
-
+  pod 'lottie-ios'
 end
