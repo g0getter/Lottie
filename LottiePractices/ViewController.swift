@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
           
           // 2. Start AnimationView with animation name (without extension)
-          
           animationView = .init(name: "moida_complete")
           
           animationView!.frame = view.bounds
@@ -25,7 +24,7 @@ class ViewController: UIViewController {
           animationView!.contentMode = .scaleAspectFit
           
           // 4. Set animation loop mode
-//          animationView!.loopMode = .loop
+          animationView!.loopMode = .loop
           
           // 5. Adjust animation speed
 //          animationView!.animationSpeed = 0.5
